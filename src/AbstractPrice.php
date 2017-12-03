@@ -14,95 +14,95 @@ namespace JDZ\Price;
  */
 abstract class AbstractPrice implements PriceInterface
 {
-	/**
-	 * Price VAT rate
+  /**
+   * Price VAT rate
    * 
-	 * @var    float 
+   * @var    float 
    */
   protected $taxRate;
   
-	/**
-	 * Price number of decimals
+  /**
+   * Price number of decimals
    * 
-	 * @var    int 
+   * @var    int 
    */
   protected $decimals;
   
-	/**
-	 * Price decimals separator
+  /**
+   * Price decimals separator
    * 
-	 * @var    string 
+   * @var    string 
    */
   protected $decimalsSeparator;
   
-	/**
-	 * Price thousands separator
+  /**
+   * Price thousands separator
    * 
-	 * @var    string 
+   * @var    string 
    */
   protected $thousandsSeparator;
   
-	/**
-	 * Price value
+  /**
+   * Price value
    * 
-	 * @var    float
+   * @var    float
    */
   protected $price;
   
-	/**
-	 * Hide cents when displaying the price
+  /**
+   * Hide cents when displaying the price
    * 
-	 * @var    bool
+   * @var    bool
    */
-	protected $hideCents;
+  protected $hideCents;
   
-	/**
-	 * Hide cents only when 0
+  /**
+   * Hide cents only when 0
    * 
-	 * @var    bool
+   * @var    bool
    */
-	protected $hideCentsWhenEmpty;
+  protected $hideCentsWhenEmpty;
   
-	/**
-	 * Hide the currency when displaying the price
+  /**
+   * Hide the currency when displaying the price
    * 
-	 * @var    bool
+   * @var    bool
    */
-	protected $hideCurrency;
+  protected $hideCurrency;
   
-	/**
-	 * Price currency
+  /**
+   * Price currency
    * 
-	 * @var    string
+   * @var    string
    */
   protected $currency;
   
-	/**
-	 * Hide the suffix when displaying the price
+  /**
+   * Hide the suffix when displaying the price
    * 
-	 * @var    bool
+   * @var    bool
    */
-	protected $hideSuffix;
+  protected $hideSuffix;
   
-	/**
-	 * Taxfree suffix
+  /**
+   * Taxfree suffix
    * 
-	 * @var    bool
+   * @var    bool
    */
   protected $taxFreeSuffix;
   
-	/**
-	 * Not taxfree suffix
+  /**
+   * Not taxfree suffix
    * 
-	 * @var    bool
+   * @var    bool
    */
   protected $taxFullSuffix;
   
   /**
    * Constructor
    * 
-   * @param 	mixed   $price      The price
-   * @param 	array   $taxFree    True if the price is taxfree.
+   * @param   mixed   $price      The price
+   * @param   array   $taxFree    True if the price is taxfree.
    *                              If tax is included, the base price will be calculted 
    *                              according to the specified taxRate.
    */
@@ -215,7 +215,7 @@ abstract class AbstractPrice implements PriceInterface
    * Format the price according to the config
    * 
    * @param   mixed     Price
-   * @return 	string    The formatted price
+   * @return   string    The formatted price
    */
   protected function format($price)
   {

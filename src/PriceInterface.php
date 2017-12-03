@@ -17,29 +17,29 @@ interface PriceInterface
   /**
    * Set the display configuration
    * 
-   * @param 	array       $config   Key/Value pairs of configuration for the display
-   * @return 	PriceBase   The current object's instance for chaining
+   * @param   array       $config   Key/Value pairs of configuration for the display
+   * @return   PriceBase   The current object's instance for chaining
    */
   public function config(array $config=[]);
   
   /**
    * Get the price
    * 
-   * @return 	string   The formatted taxfree price
+   * @return   string   The formatted taxfree price
    */
   public function getPrice();
   
   /**
    * Get the price with Tax applied
    * 
-   * @return 	string   The formatted taxfull price
+   * @return   string   The formatted taxfull price
    */
   public function getWithTax();
   
   /**
    * Get the amout of tax
    * 
-   * @return 	string   The formatted tax price
+   * @return   string   The formatted tax price
    */
   public function getVAT();
 }
